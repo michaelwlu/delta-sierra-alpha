@@ -1,7 +1,7 @@
 export const chainOperators = (original, operatorArr) => {
-	const copyOriginal = JSON.parse(JSON.stringify(original));
+	const deepCopy = JSON.parse(JSON.stringify(original));
 
-	let result = copyOriginal;
+	let result = deepCopy;
 
 	operatorArr.forEach((operator) => {
 		result = operator(result);
