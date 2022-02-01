@@ -1,4 +1,4 @@
-const isValidSudoku = (board) => {
+const isValidSudokuAttempt = (board) => {
 	// check rows
 	for (let row = 0; row < 9; row++) {
 		const hashTable = Array(9).fill(false);
@@ -76,4 +76,4 @@ const board = [
 	[".", ".", ".", ".", "8", ".", ".", "7", "9"],
 ];
 
-console.log(isValidSudoku(board));
+console.log(isValidSudokuAttempt(board)); // expect false
